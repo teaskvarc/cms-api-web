@@ -1,0 +1,32 @@
+
+<section class="content-header">
+    <h1>Projects</h1>
+</section>
+<!--TUKAJ SE DELAJO TABELE, FORME -->
+<section class="content">
+    <div class="btn btn-primary btn-xs" ui-sref="new-project">Create new</div><br/>
+
+    <table class="table">
+
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Date</td>
+                <td>Action</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr ng-repeat="project in projects">
+                <td>{{project.title}}</td>
+                <td>{{project.dateCreated | date:'dd.MM.yyyy, hh:mm:ss'}}</td>
+                <td>
+                    <div class="btn btn-xs btn-danger" ng-click="deleteProject(project._id)">Delete</div>
+                    <div ui-sref="edit-project({id:project._id})" class="btn btn-xs btn-primary">Edit</div>
+
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</section>

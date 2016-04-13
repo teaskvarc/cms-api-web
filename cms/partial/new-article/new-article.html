@@ -1,0 +1,15 @@
+
+<section class="content-header">
+    <h1>New article</h1>
+</section>
+
+<section class="content">
+
+    <label>Title</label>
+    <input type="text" class="form-control" ng-model="article.title">    <!-- 'form-control' je bootstrap -->
+    <label>Content</label>
+    <textarea ui-tinymce ng-model="article.content"></textarea>
+    <br/>
+    <div class="btn btn-success" ng-click="createArticle()">Create</div>
+</section>
+

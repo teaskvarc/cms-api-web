@@ -1,0 +1,17 @@
+<section class="content-header">
+    <h1>Edit project</h1>
+    <div class="btn btn-xs btn-danger" ng-click="deleteProject()">Delete</div>
+</section>
+<!--TUKAJ SE DELAJO TABELE, FORME -->
+<section class="content">
+
+    <label>Title</label>
+    <input type="text" ng-model="project.title" class="form-control">
+    <label>Content</label>
+    <textarea ui-tinymce ng-model="project.content"></textarea>
+    <br/>
+    <div class="btn btn-success" ng-click="onSaveClick()">Save</div>
+
+</section>
+
+

@@ -1,0 +1,27 @@
+@import "bower_components/bootstrap/less/bootstrap.less";
+//@import "bower_components/bootstrap/less/theme.less";
+@import "bower_components/font-awesome/less/font-awesome.less";
+@fa-font-path: "bower_components/font-awesome/fonts";
+
+/* Component LESS */
+@import "partial/articles/articles.less";
+@import "partial/new-article/new-article.less";
+@import "partial/projects/projects.less";
+@import "partial/edit-article/edit-article.less";
+@import "partial/edit-project/edit-project.less";
+@import "partial/new-project/new-project.less";
+/* Add Component LESS Above */
+
+/* Required for Angular UI Bootstrap */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+
+.wrapper{
+    
+    height: 100vh;
+}
+
+.content-wrapper{
+    
+    overflow: auto;
+}

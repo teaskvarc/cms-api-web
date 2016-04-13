@@ -1,0 +1,16 @@
+<section class="content-header">
+    <h1>Edit article</h1>
+    <br/>
+    <div class="btn btn-xs btn-danger" ng-click="onDeleteClick()">Delete</div>  <!--tukaj ne rabimo pripreti id, ker ga imamo v Ctrl -->
+</section>
+
+<section class="content">
+
+    <label>Title</label>
+    <input type="text" ng-model="article.title" class="form-control">
+    <label>Content</label>
+    <textarea ui-tinymce ng-model="article.content"></textarea>
+    <br/>
+    <div class="btn btn-success" ng-click="onSaveClick()">Save</div>
+
+</section>
