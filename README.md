@@ -21,3 +21,9 @@ Running MongoDB in the background
 or
 
 `$ supervisor run`
+
+### Overview
+
+The server will run on port `3000`
+
+`http://localhost:3000/cms/#/articles`
