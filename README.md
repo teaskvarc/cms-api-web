@@ -4,7 +4,9 @@ Creating CMS + API + EJS template
 ### Installation
 
 `$ git clone https://github.com/teaskvarc/cms-api-web`
+
 `$ npm install`
+
 `$ bower install`
 
 ### Requirements
@@ -25,5 +27,11 @@ or
 ### Overview
 
 The server will run on port `3000`
+
+`http://localhost:3000/articles`
+
+`http://localhost:3000/projects`
+
+For CMS
 
 `http://localhost:3000/cms/#/articles`
